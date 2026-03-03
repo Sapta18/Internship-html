@@ -1,0 +1,193 @@
+
+        /*mobile first appproch*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color:white;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1{
+            color: crimson;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+
+        }
+        .card{
+            color: aqua;
+            border-radius:10px ;
+            padding:25px ;
+            flex: 1;
+            min-width:200px ;
+            box-shadow:0px 4px 6px rgba(229, 8, 8, 0.4);
+            transition: transform 0.3s;
+
+        }
+        .h2-custom{
+            color: rgb(8, 221, 136);
+            margin-bottom: 25px;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        .card:hover{
+            transform:translateX(-5px);
+            box-shadow: 0 8px 15px rgba(244, 220, 6, 0.3);
+        }
+        .form-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .form-group{
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group.full-width{
+            grid-column: 1/-1;
+        }
+        label{
+            color: crimson;
+            font-weight: bold;
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        input,
+        select,
+        textarea{
+            padding: 10px;
+            border: 2px solid rgb(6, 99, 6);
+            border-radius: 15px;
+            font-size: 1rem;
+            transition: border 0,3s;
+            font-family: Arial;
+           
+           
+        }
+        input:focus,
+        select:focus,
+        textarea:focus{
+            outline: none;
+            border-color:rgb(3, 51, 25) ;
+            box-shadow: 0 4px 8px rgb(227, 114, 21);
+            transform:translateY(-5px);
+        }
+        textarea{
+            resize: vertical;
+            min-height: 100px;
+        }
+        .checkbox-group,
+        .radio-group{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+
+        }
+        .checkbox-item,
+        .radio-item{
+            display: flex;
+            text-align: center;
+            gap: 8px;
+
+        }
+        input[type="checkbox"]{
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+
+        }
+        .btn-group{
+            display: flex;
+            gap:15px;
+            margin-top:20px;
+        }
+        button{
+            border: none;
+            padding: 11px 28px ;
+            border-radius: 10px;
+            border-color:rgb(3, 51, 25) ;
+            font-size: 1rem;
+            cursor: pointer;
+            transform: all 0.3s ;
+            font-weight:bold ;
+        }
+        .btn-primary{
+            background-color: rgba(1, 24, 43, 0.947);
+            color: white;
+        }
+        .btn-primary:hover{
+            background-color: rgba(1, 24, 43, 0.947);
+            transform: translateY(-3px);
+        }
+        .btn-seconadary{
+            background-color: rgba(1, 24, 43, 0.947);
+            color: white;
+        }
+        .btn-seconadary:hover{
+            background-color: rgba(1, 24, 43, 0.947);
+            transform: translateY(-3px);
+        }
+        @media(max-width:780px){
+            h1{
+                font-size: 1.5rem;
+            }
+
+            .form-grid{
+                grid-template-columns: 1fr;
+            }
+            .card{
+                min-width: 100%;
+            }
+
+            .btn-group{
+                flex-direction: column;
+            }
+            button{
+                width: 100%;
+            }
+        }
+        @media(max-width:480px){
+            body{
+                padding: 10px;
+            }
+            .card{
+                padding: 20px;
+            }
+        }
+        table-container{
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        .table-stripped{
+            width: 100%;
+            border-collapse:collapse ;
+        }
+        .table-striped th,
+        .table-striped td{
+            padding: 15px;
+            text-align: left;
+        }
+        .table-striped th{
+            background-color:red ;
+            color: white;
+            font-weight:bold ;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+        .table-striped tbody tr:nth-child(odd){
+            background-color: rgb(19, 28, 191);
+        }
+        .table-striped tbody tr:hover{
+            background-color: rgb(67, 223, 52);
+        }
