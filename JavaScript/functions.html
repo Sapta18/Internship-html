@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn FS Java | Campuspe </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            //1.function declaration
+            function showMessage(){
+
+            }
+            
+            function showMessageone(message){
+                return 'this is message'+message;
+            }
+            //2.function call
+            console.log(showMessageone('how you doing?'))
+            //3.function expression
+            const multiply=function(a,b){
+                return a*b
+            }
+            console.log(multiply(5,5))
+            //4.Arrow functions
+            //4.1Basic Arrow functions
+            const subtract=(a,b)=>{
+                return a-b;
+                console.log(subtract(10,5))
+
+            }
+            //4.2 Short hand arrow functions
+            const devide=(a,b)=>a/b;
+            console.log(devide(8,2))
+
+            //4.3 no parameter
+            const sayHello = () => console.log('hello Sukanya')
+            console.log(sayHello())
+
+
+        </script>
+    </body>
+</html>
