@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author"  content="Dennis">
+        <meta name="keywords" content="html,Basics of WebApp">
+        <meta name="description" content="My Website for Learning">
+        <title>Learn FS Java | Campuspe </title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            //conditional and control
+           //if Statement
+           let age=19;
+           if(age>=18){
+            console.log("eleigible for vote");
+           }
+           //if-else statement
+           let age2=19;
+           if(age2>=18){
+            console.log("eleigible for vote");
+           }
+           else{
+            console.log("not eleigible for vote");
+           }
+
+           //if-else-if statement
+           let age3=19;
+           if(age2<=12){
+            console.log("He is child");
+           }
+           else if(age<=19){
+            console.log("he is teenager");
+           }
+           else{
+            console.log("he is adult");
+           }
+
+           //Switch statement
+           let day="monday";
+           switch(day){
+            case 'Monaday':console.log("Start of the week");
+                             break;
+            case 'Fiday'  :console.log("Almost Weekend");
+                             break;
+            case 'Saturday':console.log("Weekend of first");
+                             break;
+            case 'Sunday'  :console.log("weekend");
+                             break;
+                             
+            default:console.log("No weekend");
+           }
+           //ternary operator
+           let status=age>=18 ? 'Adult' : 'Minor';
+           //for loop
+           for(let i=1;i<=10;i++){
+            console.log(i)
+           }
+           //while loop
+           let count=1;
+           while(count<=5){
+            console.log(count);
+            count++;
+           }
+           //do while loop
+           let numb=10;
+           do{
+            console.log(numb);
+            numb++
+           }while(numb<=5)
+           //for..of loop
+           /*(dedicately and specificalluy work with a arrays)*/
+           let colors=['red','green','blue']
+           for(let color of colors){
+            console.log(color)
+           }
+           //for..in loop
+           /*used for the key value fairs like objects*/
+           letpesrson={
+            name:'Sukanya',
+            age:23,
+            city:'banglore'
+           }
+           for(let key in person){
+            console.log(key+':'+person(key))
+           }
+           //Break 
+           for(let x=1;x<=20;x++){
+            if(x==10) break;
+            console.log('x='+x)
+           }
+
+           //  Continue
+           for(let y=1;y<=20;y++){
+            if(x==3) continue;
+            console.log('y='+y)
+           }
+
+
+
+        </script>
+        
+       
+    </body>
+</html>
