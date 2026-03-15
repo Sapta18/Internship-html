@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node appn.js",
+    "dev" : "nodemon appn.js"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
